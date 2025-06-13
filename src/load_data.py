@@ -120,12 +120,12 @@ def load_csv_data() -> None:
             session.merge(race)
 
         # Load results (sample first 1000 for performance)
-        print("Loading results (first 1000 rows)...")
+        print("Loading results...")
         results_df = pl.read_csv(
             "data/results.csv",
             null_values=["\\N"],
             infer_schema_length=None,
-        ).head(1000)
+        )
 
         for row in results_df.iter_rows(named=True):
             result = Result(
@@ -151,11 +151,11 @@ def load_csv_data() -> None:
             session.merge(result)
 
         # Load qualifying (sample first 1000 for performance)
-        print("Loading qualifying (first 1000 rows)...")
+        print("Loading qualifying...")
         qualifying_df = pl.read_csv(
             "data/qualifying.csv",
             null_values=["\\N"],
-        ).head(1000)
+        )
 
         for row in qualifying_df.iter_rows(named=True):
             qualifying = Qualifying(

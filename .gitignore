@@ -10,5 +10,6 @@ wheels/
 .venv
 
 debug
+*.db
 
 src/data
