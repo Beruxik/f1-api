@@ -1,10 +1,12 @@
 [project]
 name = "f1-api"
 version = "0.1.0"
-description = "Add your description here"
+description = "Formula 1 Data API - CRUD operations for F1 racing data"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "fastapi[standard]>=0.115.12",
     "sqlmodel>=0.0.24",
+    "polars>=0.20.0",
+    "python-multipart>=0.0.6",
 ]
