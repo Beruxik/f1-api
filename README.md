@@ -31,7 +31,12 @@ The API manages the following F1 entities:
 
 ### Prerequisites
 
-1. **Install uv**: This project uses uv for Python package management. Install it first:
+1. **Python 3.13+**: This project requires Python 3.13 or higher. You can:
+   - Download it from [python.org](https://www.python.org/downloads/)
+   - Use your system's package manager
+   - Install it with uv (after installing uv): `uv python install 3.13`
+
+2. **Install uv**: This project uses uv for Python package management. Install it first:
 
    **On macOS and Linux:**
    ```bash
@@ -51,7 +56,7 @@ The API manages the following F1 entities:
 
    For more installation options, visit: https://docs.astral.sh/uv/getting-started/installation/
 
-2. **Download F1 Dataset**: Download the Formula 1 dataset from Kaggle:
+3. **Download F1 Dataset**: Download the Formula 1 dataset from Kaggle:
    - Visit: https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020
    - Download the dataset (you'll need a Kaggle account)
    - Extract the CSV files to the `src/data/` folder in your project directory
