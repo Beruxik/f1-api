@@ -61,12 +61,13 @@ uv sync
 
 2. (Optional) Load sample data from CSV files:
 ```bash
-uv run python src/load_data.py
+cd src
+uv run load_data.py
 ```
 
 3. Run the application:
 ```bash
-uv run fastapi run src/main.py
+uv run fastapi run
 ```
 
 The application will be available at `http://localhost:8000`
